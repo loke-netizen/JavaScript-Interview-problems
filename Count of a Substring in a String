@@ -1,1 +1,12 @@
-
+let str = "ashi asm as ashash";
+function counts(str,sub){
+let count=0
+for (let i=0;i<str.length;i++){
+    if(str.substring(i,i+sub.length)===sub){
+        count++
+    }
+}
+return count
+}
+console.log(counts(str,"ash"))
+console.log(str.includes("ash"))
